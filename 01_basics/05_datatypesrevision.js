@@ -36,22 +36,22 @@ const myFunction = function(){
 //memory management in js
 //primitive(stack) and non-primitive(heap)
 
-//satck
+//satck---->copy(all the primitive data types will go into stack)
 let x = 10;
-let y = x;
+let y = x;   // y will get copy of x not reference
 x = 5;
 console.log(x,y);
 
-//heap
+//heap--->reference(all non primitive data type will get heap memory)
 let user_1 = {
     name: "adi",
     age :19,
 }
-let user_2 = user_1;
+let user_2 = user_1;    //user two will get reference and point to user_1
 user_2.name = "tanay";
 
-console.log(user_1.name);
-console.log(user_2.name);
+console.log(user_1.name);  //original name adi will change
+console.log(user_2.name);  
 
 
 
