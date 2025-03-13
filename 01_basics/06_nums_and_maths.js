@@ -23,3 +23,12 @@ console.log(Math.abs(-98));
 console.log(Math.round(9.6))
 console.log(Math.ceil(8.4))
 console.log(Math.floor(8.4))
+console.log(Math.min(1,5,9,4),Math.max(3,6,8,5));
+
+console.log(Math.random());//give any random value btw 0<=x<=1
+
+console.log(Math.random()*10 + 1)
+//formula to generate number between given range
+const max = 20
+const min = 10
+console.log(Math.floor(Math.random()*(max-min+1))+min)
