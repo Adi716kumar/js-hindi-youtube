@@ -45,3 +45,16 @@ function one(){
 }
 
 one();
+
+//addTwo(3)   Note-->we can also use function before its declaration
+function addTwo(num){
+    console.log(num+2);
+}
+addTwo(3)
+
+//assigning function in variable or declaration of functio using variables
+//addtwo(5)   Note--->in this case its not possible in case of holding function in variable
+const addtwo = function(num){
+    console.log(num+1)
+}
+addtwo(5)
