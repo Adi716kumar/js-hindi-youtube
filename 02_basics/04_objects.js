@@ -33,14 +33,35 @@ const obj3 = {...obj1,...obj2}
 //     {,,,},
 //     {,,,,},
 //     {,,,},
-// ]
+
 
 //important methods
-console.log(tinderUser);
-console.log(Object.keys(tinderUser)); // return type will be array
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));// create array having key and value in each seperate section
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser)); // return type will be array
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));// create array having key and value in each seperate section
 
 //suppose we are searching any value in object and that does not exist this acn lead system crash so we can as ask it..
-console.log(tinderUser.hasOwnProperty('id'));  //true
+// console.log(tinderUser.hasOwnProperty('id'));  //true
 queueMicrotask
+
+
+//destructring of object can also do with arrays
+const course = {
+    coursename : "js hindi",
+    price : '999',
+    courseInstructor : "hitesh"
+}
+const {courseInstructor : ci, coursename : cn} = course; // all the entities must be destructured within same braces in same line otherwise gives unknown resul ....  ci--> known as props..
+// const {coursename : cn} = course;
+console.log(ci);
+console.log(cn);
+
+
+//....APIs in javascript all the data in backened is in mainly in the form of jason earlier xml
+// {
+//     "name" : "aditya",
+//     "class" : "btech"
+// }
+
+
